@@ -413,7 +413,8 @@ static void stk1160_disconnect(struct usb_interface *interface)
 	mutex_lock(&dev->v4l_lock);
 
 	/* ac97 unregister needs to be done before usb_device is cleared */
-	stk1160_ac97_unregister(dev);
+//Removed for Android compatability	
+//stk1160_ac97_unregister(dev);
 
 	stk1160_stop_streaming(dev, false);
 	video_unregister_device(&dev->vdev);

@@ -950,7 +950,8 @@ int stk1160_video_register(struct stk1160 *dev)
 	dev->fmt = &format[0];
 	stk1160_set_std(dev);
 
-	stk1160_ac97_register(dev);
+	//Removed for Android compatability
+	//stk1160_ac97_register(dev);
 
 	v4l2_device_call_all(&dev->v4l2_dev, 0, core, s_std,
 			dev->norm);

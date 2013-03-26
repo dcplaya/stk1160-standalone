@@ -22,7 +22,8 @@
 
 #include <linux/i2c.h>
 #include <sound/core.h>
-#include <sound/ac97_codec.h>
+//Removed for Android compatability
+// #include <sound/ac97_codec.h>
 #include <media/videobuf2-core.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
@@ -192,6 +193,7 @@ int stk1160_read_reg_req_len(struct stk1160 *dev, u8 req, u16 reg,
 		char *buf, int len);
 
 /* Provided by stk1160-ac97.c */
-int stk1160_ac97_register(struct stk1160 *dev);
-int stk1160_ac97_unregister(struct stk1160 *dev);
+//Removed for Android compatability
+//int stk1160_ac97_register(struct stk1160 *dev);
+//int stk1160_ac97_unregister(struct stk1160 *dev);
 
