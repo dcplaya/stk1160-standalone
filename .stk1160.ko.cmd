@@ -1,0 +1,1 @@
+cmd_/home/drew/android-dev/stk1160-standalone/stk1160.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.5.0-25-generic/scripts/module-common.lds --build-id  -o /home/drew/android-dev/stk1160-standalone/stk1160.ko /home/drew/android-dev/stk1160-standalone/stk1160.o /home/drew/android-dev/stk1160-standalone/stk1160.mod.o
